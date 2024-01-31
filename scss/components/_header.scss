@@ -1,0 +1,31 @@
+// comentario de scss(no se ve reflejado en el main.css)
+/*header*/
+header{
+    .header-estilos{
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #1a1919;
+        .container-fluid{
+            .header-img{
+                width: 100px;
+                border-radius: 100%;;
+            }
+            .border-button{
+                border:none;
+                .color-button{
+                    background-image: url(../img/hamburger-2-menu-mobile-svgrepo-com.svg);
+                }
+            }
+
+            .menu{
+                flex-grow: 0;
+                .estilos-nav{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: #f0f8ff; 
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*main menu*/
+.main-menu{
+    .contenedor-menu{
+        background-color: #1a1919f8;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .pag-menu{
+        img{
+            margin: 10px;
+            width: 650px;
+            height: 700px;
+            object-fit:cover ;
+        }
+    }
+}

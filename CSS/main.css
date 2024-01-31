@@ -1,0 +1,363 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*cambia la medida rem(16px) a 10 px*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*header*/
+header .header-estilos {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1919;
+}
+header .header-estilos .container-fluid .header-img {
+  width: 100px;
+  border-radius: 100%;
+}
+header .header-estilos .container-fluid .border-button {
+  border: none;
+}
+header .header-estilos .container-fluid .border-button .color-button {
+  background-image: url(../img/hamburger-2-menu-mobile-svgrepo-com.svg);
+}
+header .header-estilos .container-fluid .menu {
+  flex-grow: 0;
+}
+header .header-estilos .container-fluid .menu .estilos-nav {
+  font-size: 20px;
+  text-decoration: none;
+  color: #f0f8ff;
+}
+
+/*main index*/
+.main-index {
+  background-color: rgba(26, 25, 25, 0.9725490196);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  color: #f0f8ff;
+}
+.main-index .titulo-index {
+  padding: 20PX;
+  font-size: x-large;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  width: 23%;
+}
+.main-index .contenedor-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  position: relative;
+}
+.main-index .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(26, 25, 25, 0.9725490196);
+  align-items: center;
+  color: #f0f8ff;
+}
+.main-index .card-imagen {
+  display: flex;
+}
+.main-index .card img {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  justify-content: center;
+  border-radius: 0px 30px 0px 30px;
+  overflow: hiden;
+  box-shadow: 13px 10px 11px 0px rgba(0, 0, 0, 0.75);
+}
+.main-index .card-texto {
+  font-size: 20px;
+  margin: 40px;
+}
+
+/*main sobre-nosotros*/
+.main-sobre-nosotros .contenedor-sn {
+  display: grid;
+  background-color: rgba(26, 25, 25, 0.9725490196);
+  grid-template-columns: 1fr;
+  color: #f0f8ff;
+}
+.main-sobre-nosotros .contenedor-sn p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #f0f8ff;
+}
+.main-sobre-nosotros .contenedor-sn .encabezado-sn {
+  margin: 20px;
+}
+.main-sobre-nosotros .contenedor-sn .encabezado-sn h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #f0f8ff;
+}
+.main-sobre-nosotros .contenedor-sn .menu-sn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.main-sobre-nosotros .contenedor-sn .menu-sn .hijo-menu {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main-sobre-nosotros .contenedor-sn .menu-sn .hijo-menu .item-img img {
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  left: 175px;
+  width: 50px;
+  height: 50px;
+  color: #f0f8ff;
+}
+.main-sobre-nosotros .contenedor-sn .menu-sn .hijo-menu .item-h2 h2 {
+  position: absolute;
+  left: 170px;
+  color: #f0f8ff;
+}
+
+/*main menu*/
+.main-menu .contenedor-menu {
+  background-color: rgba(26, 25, 25, 0.9725490196);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.main-menu .pag-menu img {
+  margin: 10px;
+  width: 650px;
+  height: 700px;
+  object-fit: cover;
+}
+
+/*main contacto*/
+.main-contacto .contenedor-cto {
+  background-color: rgba(26, 25, 25, 0.9725490196);
+  display: grid;
+  position: relative;
+  grid-template-columns: 730px 400px;
+  justify-content: center;
+  color: aliceblue;
+}
+.main-contacto .mensaje-cto {
+  font-size: 20px;
+  font-weight: 400;
+  width: 380;
+  height: 280px;
+  padding: 30px;
+  text-align: left;
+  margin: 30px 30px 250px 30px;
+  align-items: center;
+}
+.main-contacto form {
+  padding: 10px;
+}
+.main-contacto .formulario-cto {
+  margin: 30px 30px 250px 30px;
+  font-size: 20px;
+}
+.main-contacto .formulario-cto .hijo-form {
+  margin-bottom: 1rem;
+}
+.main-contacto .formulario-cto .hijo-form .nieto-form {
+  display: block;
+  width: 100%;
+  padding: 2px 6px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #495057;
+  background-color: #f0f8ff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*main ubicacion*/
+.main-ubicacion .contenedor-ubi {
+  color: #f0f8ff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(26, 25, 25, 0.9725490196);
+}
+.main-ubicacion .contenedor-ubi .ubicacion {
+  margin: 100px;
+}
+.main-ubicacion .contenedor-ubi .ubicacion .horario {
+  margin: 30px;
+}
+.main-ubicacion .contenedor-ubi .mapa {
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  margin: 100px;
+  width: 600px;
+}
+
+/*footer*/
+footer {
+  background-color: #1a1919;
+}
+footer .contenedor-ft .redes {
+  color: #f0f8ff;
+  font-size: x-large;
+}
+footer .contenedor-ft .redes .hijos {
+  display: grid;
+  grid-template-columns: repeat(2, 100px) 1fr;
+  padding: 10px;
+  align-items: center;
+}
+footer .contenedor-ft .redes .hijos img {
+  width: 50px;
+  height: 50px;
+}
+
+/* media query tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*index*/
+  .main-index .titulo-index {
+    width: 36%;
+  }
+  .main-index .contenedor-inicio .card .card-imagen {
+    display: grid;
+    justify-content: center;
+  }
+  /* sobre nosotros */
+  .main-sobre-nosotros .contenedor-sn .menu-sn {
+    grid-template-columns: 1fr;
+  }
+}
+/* Menu */
+.main-menu .contenedor-menu {
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.main-menu .contenedor-menu .pag-menu {
+  display: flex;
+  justify-content: center;
+}
+
+/* Contacto */
+.main-contacto .contenedor-cto {
+  grid-template-columns: 1fr;
+}
+.main-contacto .contenedor-cto .mensaje-cto {
+  margin: 0px;
+  margin-top: 35px;
+}
+.main-contacto .contenedor-cto .formulario-cto {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+/* Ubicacion */
+.main-ubicacion .contenedor-ubi {
+  grid-template-columns: 1fr;
+}
+.main-ubicacion .contenedor-ubi .ubicacion {
+  margin-bottom: 0px;
+}
+
+/* media query mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /*index*/
+  .main-index .titulo-index {
+    width: 80%;
+  }
+  .main-index .contenedor-inicio .card .card-imagen {
+    display: grid;
+    justify-content: center;
+  }
+  .main-index .contenedor-inicio .card .card-imagen img {
+    width: 300px;
+    margin: 15px 0px 15px 0px;
+  }
+  /* sobre nosotros */
+  .main-sobre-nosotros .contenedor-sn .encabezado-sn {
+    margin: 10% 50% 10% 0%;
+    width: 100%;
+  }
+  .main-sobre-nosotros .contenedor-sn .encabezado-sn h1 {
+    width: 100% px;
+  }
+  .main-sobre-nosotros .contenedor-sn .menu-sn {
+    grid-template-columns: 1fr;
+    margin: 10% 0% 10% 0%;
+  }
+  .main-sobre-nosotros .contenedor-sn .menu-sn .hijo-menu {
+    width: 100%;
+  }
+  .main-sobre-nosotros .contenedor-sn .menu-sn .hijo-menu .item-img img {
+    left: 45%;
+  }
+  .main-sobre-nosotros .contenedor-sn .menu-sn .hijo-menu .item-h2 h2 {
+    left: 45%;
+  }
+  /* Menu */
+  .main-menu .contenedor-menu {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .main-menu .contenedor-menu .pag-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .main-menu .contenedor-menu .pag-menu img {
+    margin: 10px;
+    width: 290px;
+    height: 400px;
+    object-fit: cover;
+  }
+  /* Ubicacion */
+  .main-ubicacion .contenedor-ubi {
+    grid-template-columns: 1fr;
+  }
+  .main-ubicacion .contenedor-ubi .ubicacion {
+    margin: 0px 0px 0px 30px;
+    width: 80%;
+  }
+  .main-ubicacion .contenedor-ubi .mapa {
+    margin: 0px 0px 0px 30px;
+    width: 80%;
+  }
+  footer .redes .hijos {
+    grid-template-columns: repeat(2, 100px) 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "ig txt txt" "face txt txt";
+  }
+  footer .redes .hijos .hijo-1 {
+    grid-area: ig;
+  }
+  footer .redes .hijos .hijo-2 {
+    grid-area: face;
+  }
+  footer .redes .hijos .hijo-3 {
+    grid-area: txt;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
