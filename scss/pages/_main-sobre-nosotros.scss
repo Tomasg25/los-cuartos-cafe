@@ -3,21 +3,21 @@
 
     .contenedor-sn{
         display: grid;
-        background-color: #1a1919f8;
+        background-color: $bgcolor-principal;
         grid-template-columns: 1fr;
-        color: #f0f8ff  ;
+        color: $color-principal ;
         p{
             font-size: 15px;
             text-align: center;
             font-weight: bold;
-            color: #f0f8ff  ;
+            color: $color-principal;
         }
         .encabezado-sn{
             margin: 20px;
             h1{
                 font-size: 20px;
                 text-align: center;
-                color: #f0f8ff  ;
+                color: $color-principal ;
             }
         }
         .menu-sn{
@@ -30,8 +30,7 @@
             .hijo-menu{
                 display: grid;
                 grid-template-rows: repeat(3, 1fr);
-                width: 400px;
-                height: 400px;
+                @include sizes(400px , 400px);
                 align-items: center;
                 justify-content: center;
                 position: relative;
@@ -41,16 +40,15 @@
                         position: absolute;
                         top: 60px;
                         left: 175px;
-                        width: 50px;
-                        height: 50px;
-                        color: #f0f8ff ;
+                        @include sizes(50px , 50px);
+                        color: $color-principal;
                     }
                 }
                 .item-h2 {
                     h2{                    
                         position: absolute;
                         left: 170px;
-                        color: #f0f8ff ;
+                        color: $color-principal ;
                     }
                 }
             }

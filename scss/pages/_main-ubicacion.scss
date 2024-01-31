@@ -2,12 +2,12 @@
 .main-ubicacion{
 
     .contenedor-ubi{
-        color: #f0f8ff ;
+        color: $color-principal ;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         font-size: 20px;
         font-weight: 400;
-        background-color: #1a1919f8;
+        background-color: $bgcolor-principal;
         .ubicacion{
             margin:100px;
             .horario{

@@ -1,9 +1,9 @@
 /*footer*/
 footer{
-    background-color: #1a1919;
+    background-color: $bgcolor-principal;
     .contenedor-ft{
         .redes {
-            color: #f0f8ff ;
+            color: $color-principal;
             font-size: x-large;
             .hijos{
                 display: grid;
