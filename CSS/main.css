@@ -10,6 +10,11 @@ html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.main-ubicacion .contenedor-ubi .ubicacion h1, .main-contacto .mensaje-cto h1, .main-sobre-nosotros .contenedor-sn .encabezado-sn h1, .main-index .titulo-index {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
 /*header*/
 header .header-estilos {
   justify-content: space-between;
@@ -46,7 +51,6 @@ header .header-estilos .container-fluid .menu .estilos-nav {
 }
 .main-index .titulo-index {
   padding: 20PX;
-  font-size: x-large;
   position: relative;
   top: 10px;
   left: 20px;
@@ -86,13 +90,14 @@ header .header-estilos .container-fluid .menu .estilos-nav {
 
 /*main sobre-nosotros*/
 .main-sobre-nosotros .contenedor-sn {
+  min-height: 75vh;
   display: grid;
   background-color: rgba(26, 25, 25, 0.9725490196);
   grid-template-columns: 1fr;
   color: #f0f8ff;
 }
 .main-sobre-nosotros .contenedor-sn p {
-  font-size: 15px;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
   color: #f0f8ff;
@@ -101,7 +106,6 @@ header .header-estilos .container-fluid .menu .estilos-nav {
   margin: 20px;
 }
 .main-sobre-nosotros .contenedor-sn .encabezado-sn h1 {
-  font-size: 20px;
   text-align: center;
   color: #f0f8ff;
 }

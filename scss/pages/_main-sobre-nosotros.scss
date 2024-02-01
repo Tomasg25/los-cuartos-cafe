@@ -2,12 +2,13 @@
 .main-sobre-nosotros{
 
     .contenedor-sn{
+        min-height: 75vh;
         display: grid;
         background-color: $bgcolor-principal;
         grid-template-columns: 1fr;
         color: $color-principal ;
         p{
-            font-size: 15px;
+            font-size: 1.5rem;
             text-align: center;
             font-weight: bold;
             color: $color-principal;
@@ -15,7 +16,7 @@
         .encabezado-sn{
             margin: 20px;
             h1{
-                font-size: 20px;
+                @extend %titulos;
                 text-align: center;
                 color: $color-principal ;
             }

@@ -8,7 +8,7 @@
 
     .titulo-index{
         padding: 20PX;
-        font-size: x-large;
+        @extend %titulos;
         position: relative;
         top: 10px;
         left: 20px;
