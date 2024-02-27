@@ -9,12 +9,12 @@
         font-weight: 400;
         background-color: $bgcolor-principal;
         .ubicacion{
-            h1{
-                @extend %titulos;
-            }
-            margin:100px;
-            .horario{
-                margin: 30px;
+            .flex-ubi{
+                h1 {
+                    @extend %titulos;
+                }
+                margin:100px;
+                
             }
         }
         .mapa{

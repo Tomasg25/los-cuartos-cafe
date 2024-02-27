@@ -2,15 +2,25 @@
 .main-menu{
     .contenedor-menu{
         background-color: $bgcolor-principal;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+        
+            .titulo-menu {
+                color: $color-principal;
+                padding: 20PX;
+                @extend %titulos;
+            }
+            .menu-bar {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+            .pag-menu {
+                img {
+                    margin: 5px;
+                    @include sizes(600px, 800px);
+                    object-fit: cover;
+                }
+            }
+
     }
-    .pag-menu{
-        img{
-            margin: 10px;
-            @include sizes(650px , 700px);
-            object-fit:cover ;
-        }
-    }
+
 }

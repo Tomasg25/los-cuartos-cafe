@@ -54,7 +54,22 @@
                 }
             }
         }
+        .carrusel-sn{
+            .carousel{
+                .carrusel-img{
+                    .img-carrusel {
+                        margin: 20px 60px 20px 60px;
+                        @include sizes(710px , 400px);
+                        /* object-fit: cover;  */
+                    }
+                }
+            }
 
+        }
+        .contenedor-vid{
+            display: flex;
+            justify-content: center;
+        }
     }
 
 }

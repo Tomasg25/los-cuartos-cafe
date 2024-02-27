@@ -4,21 +4,28 @@
         background-color: $bgcolor-principal;
         display: grid;
         position: relative;
-        grid-template-columns: 730px 400px;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         color: aliceblue;
     }
     .mensaje-cto{
-        h1{
-            @extend %titulos;
-        }
-        font-size: 20px;
-        font-weight: 400;
-        @include sizes(380px , 280px);
-        padding: 30px;
-        text-align:left;
-        margin: 30px 30px 250px 30px;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        .flex-msj{
+            h1 {
+                @extend %titulos;
+            }
+            font-size: 20px;
+            font-weight: 400;
+            @include sizes(380px, 280px);
+            padding: 30px;
+            text-align:left;
+            /* margin: 30px 30px 150px 30px; */
+            align-items: center;
+        }
+
+
     }
     form{
         padding: 10px;
